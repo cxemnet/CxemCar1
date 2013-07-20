@@ -1,0 +1,40 @@
+<resources>
+    <string name="menu_settings">Настройки</string>
+    
+    <string name="title_activity_main">Cxem CAR</string>
+    <string name="title_activity_accelerometer">Cxem CAR - Управление акселерометром</string>
+    <string name="title_activity_wheel">Cxem CAR - Виртуальный руль</string>
+    <string name="title_activity_buttons">Cxem CAR - Управление кнопками</string>
+    <string name="title_activity_touch">Cxem CAR - Touch управление</string>   
+    <string name="title_activity_mcu">Cxem CAR - Настройки контроллера</string>
+    <string name="title_activity_about">Cxem CAR - О программе</string>        
+    
+    <string name="info_text">Наклоните Android устройство вперед или назад для начала движения</string>
+    <string name="info_text_wheel">Зажмите ползунок скорости и наклоните Android устройство влево&#47;вправо для поворота</string>
+    
+    <string name="btn_accel">Управление от акселерометра</string>
+    <string name="btn_wheel">Виртуальный руль</string>
+    <string name="btn_button">Управление от кнопок</string>
+    <string name="btn_touch">Управление от touch</string>
+    <string name="btn_mcu">Настройки контроллера</string>
+    <string name="btn_about">О программе</string>
+    
+    <string name="forward">Вперед</string>
+    <string name="backward">Назад</string>
+    <string name="left">Влево</string>
+    <string name="right">Вправо</string>
+    	
+	<string name="text_about">Последние версии ПО, а также исходные коды вы можете скачать <![CDATA[<a href="http://cxem.net/uprav/uprav43.php">на официальной странице проекта</a>]]></string>
+	<string name="mcu_textInfo1">Данные настройки предназначены для микроконтроллера. Параметры передаются и сохраняются в EEPROM памяти МК</string>
+	<string name="mcu_textStop">Остановка при потере связи:</string>
+	<string name="mcu_cBox_AutoOFF">Вкл.</string>
+	<string name="mcu_after_sec">Через (секунд):</string>
+	<string name="mcu_flash_Read">Считать данные</string>
+	<string name="mcu_flash_Write">Записать данные</string>
+	
+	<string name="mcu_error_range">Введите корректное значение (0.01 &#8211; 99.9)</string>
+	<string name="err_data_entry">Ошибка ввода данных</string>
+	<string name="flash_success">Данные в Flash успешно записаны</string>
+	<string name="error_get_data">Ошибка получения данных</string>
+	
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+            
+	<PreferenceCategory
+ 		android:key="pref_General"
+ 		android:title="General settings"
+ 		android:summary="General settings">
+	
+		<EditTextPreference
+			 android:key="pref_MAC_address"
+			 android:title="MAC address"
+			 android:summary="MAC-address of Bluetooth module"
+			 android:defaultValue="@+string/default_MAC" />
+		
+		<EditTextPreference
+			 android:key="pref_commandLeft"
+			 android:title="Symbol for left motor"
+			 android:summary="Command symbol for left motor"
+			 android:defaultValue="@+string/default_commandLeft" />
+			
+		<EditTextPreference
+			 android:key="pref_commandRight"
+			 android:title="Symbol for right motor"
+			 android:summary="Command symbol for right motor"
+			 android:defaultValue="@+string/default_commandRight" />
+		
+		<EditTextPreference
+			 android:key="pref_commandHorn"
+			 android:title="Optional Symbol"
+			 android:summary="Symbol for optional command (for example horn)"
+			 android:defaultValue="@+string/default_commandHorn" />
+		
+		<CheckBoxPreference
+			android:key="pref_Debug"
+			android:title="Debug info"
+			android:summary="Show debug information"
+			android:defaultValue="false" />
+		
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+ 		android:key="pref_Accel"
+ 		android:title="Accelerometer control settings"
+ 		android:summary="Accelerometer control settings">
+	
+		<EditTextPreference
+			 android:key="pref_xMax"
+			 android:title="Limit on the X axis"
+			 android:summary="Limit on the X axis (sensitivity)"
+			 android:defaultValue="@+string/default_xMax" />
+	
+		<EditTextPreference
+			 android:key="pref_xR"
+			 android:title="Pivot point for motor (X axis)"
+			 android:summary="Pivot point for motor, above which one motor rotate in the opposite direction"
+			 android:defaultValue="@+string/default_xR" />
+		
+		<EditTextPreference
+			 android:key="pref_yMax"
+			 android:title="Limit on the Y axis"
+			 android:summary="Limit on the Y axis (sensitivity)"
+			 android:defaultValue="@+string/default_yMax" />
+		
+		<EditTextPreference
+			 android:key="pref_yThreshold"
+			 android:title="PWM minimum value"
+			 android:summary="The minimum value of the PWM (below the motor is not running)"
+			 android:defaultValue="@+string/default_yThreshold" />	
+			 
+		<EditTextPreference
+			 android:key="pref_pwmMax"
+			 android:title="PWM maximum value"
+			 android:summary="The maximum value of the PWM (for Arduino it's 255)"
+			 android:defaultValue="@+string/default_pwmMax" />	
+		 
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+ 		android:key="pref_Buttons"
+ 		android:title="Buttons control settings"
+ 		android:summary="Buttons control settings">
+		 
+		<EditTextPreference
+			 android:key="pref_pwmBtnMotorLeft"
+			 android:title="Left PWM value"
+			 android:summary="Left PWM constant value"
+			 android:defaultValue="@+string/default_pwmBtnMotorLeft" />
+		
+		<EditTextPreference
+			 android:key="pref_pwmBtnMotorRight"
+			 android:title="Right PWM value"
+			 android:summary="Right PWM constant value"
+			 android:defaultValue="@+string/default_pwmBtnMotorRight" />
+		
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+ 		android:key="pref_Touch"
+ 		android:title="Touch control settings"
+ 		android:summary="Touch control settings">
+		 
+		<EditTextPreference
+			 android:key="pref_xRperc"
+			 android:title="Pivot point for motor (X axis) percent"
+			 android:summary="Pivot point for motor (in percent), above which one motor rotate in the opposite direction"
+			 android:defaultValue="@+string/default_xRperc" />
+				
+	</PreferenceCategory>	
+			
+</PreferenceScreen>

@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true" >
+       
+    <TextView
+        android:id="@+id/mRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/mLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mRight"
+        android:layout_alignParentLeft="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textViewY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mLeft"
+        android:layout_alignParentLeft="true"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textViewX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewY"
+        android:layout_alignParentLeft="true"
+        android:text="" />
+    
+     <TextView
+        android:id="@+id/textViewCmdSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewX"
+        android:layout_alignParentLeft="true"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/cxem_logo"
+        android:contentDescription="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:alpha="0.35"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:src="@drawable/cxemnet_logo" />
+
+    <ToggleButton
+        android:id="@+id/LightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cxem_logo"
+        android:layout_centerHorizontal="true" />
+
+     <com.cxem_car.VerticalSeekBar
+         android:id="@+id/calcVerticalSeekBar"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:layout_toLeftOf="@+id/cxem_logo"
+         android:fadingEdge="none"
+         android:layout_marginBottom="25dp"
+         android:layout_marginTop="25dp"
+         android:layout_marginRight="10dp"
+         android:progress="0"
+         android:progressDrawable="@layout/progress"
+         android:scrollbarStyle="outsideInset"
+         android:thumb="@layout/progress_t" />
+
+     <TextView
+         android:id="@+id/info_text"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:paddingTop="5dp"
+         android:text="@string/info_text_wheel" />
+
+     <Button
+         android:id="@+id/btnRear"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:text="@string/backward" />
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true" >
+
+    <ImageView
+        android:id="@+id/cxem_logo"
+        android:contentDescription="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:alpha="0.35"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:src="@drawable/cxemnet_logo" />
+
+    <TextView
+        android:id="@+id/textInfo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:text="@string/mcu_textInfo1" />
+
+    <TextView
+        android:id="@+id/textStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textInfo1"
+        android:paddingLeft="5dp"
+        android:paddingTop="15dp"
+        android:text="@string/mcu_textStop"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <CheckBox
+        android:id="@+id/cBox_AutoOFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textStop"
+        android:layout_alignBottom="@+id/textStop"
+        android:layout_toRightOf="@+id/textStop"
+        android:text="@string/mcu_cBox_AutoOFF" />
+    
+    <TextView
+        android:id="@+id/after_sec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textStop"
+        android:paddingLeft="5dp"
+        android:paddingTop="15dp"
+        android:text="@string/mcu_after_sec"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/AutoOFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/after_sec"
+        android:layout_toRightOf="@+id/after_sec"
+        android:digits="0123456789."
+		android:inputType="numberDecimal"
+		android:maxLength="4"
+        android:ems="10" >
+    </EditText>
+
+    <Button
+        android:id="@+id/flash_Read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/after_sec"
+        android:text="@string/mcu_flash_Read" />
+
+    <Button
+        android:id="@+id/flash_Write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/flash_Read"
+        android:layout_alignBottom="@+id/flash_Read"
+        android:layout_toRightOf="@+id/flash_Read"
+        android:paddingTop="5dp"
+        android:text="@string/mcu_flash_Write" />
+
+</RelativeLayout>

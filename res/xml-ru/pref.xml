@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android">
+            
+	<PreferenceCategory
+ 		android:key="pref_General"
+ 		android:title="Общие настройки"
+ 		android:summary="Общие настройки">
+	
+		<EditTextPreference
+			 android:key="pref_MAC_address"
+			 android:title="MAC адрес"
+			 android:summary="MAC-адрес Bluetooth устройства"
+			 android:defaultValue="@+string/default_MAC" />
+		
+		<EditTextPreference
+			 android:key="pref_commandLeft"
+			 android:title="Команда для левого двигателя"
+			 android:summary="Символ команды для левого двигателя"
+			 android:defaultValue="@+string/default_commandLeft" />
+			
+		<EditTextPreference
+			 android:key="pref_commandRight"
+			 android:title="Команда для правого двигателя"
+			 android:summary="Символ команды для правого двигателя"
+			 android:defaultValue="@+string/default_commandRight" />
+		
+		<EditTextPreference
+			 android:key="pref_commandHorn"
+			 android:title="Дополнительная команда"
+			 android:summary="Символ дополнительной команды (к примеру звуковой сигнал)"
+			 android:defaultValue="@+string/default_commandHorn" />
+		
+		<CheckBoxPreference
+			android:key="pref_Debug"
+			android:title="Отладочная информация"
+			android:summary="Отображение отладочной информации"
+			android:defaultValue="false" />
+		
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+ 		android:key="pref_Accel"
+ 		android:title="Параметры при управлении от акселерометра"
+ 		android:summary="Параметры при управлении от акселерометра">
+	
+		<EditTextPreference
+			 android:key="pref_xMax"
+			 android:title="Предел по оси X"
+			 android:summary="Предел наклона (чувствительность) по оси X"
+			 android:defaultValue="@+string/default_xMax" />
+	
+		<EditTextPreference
+			 android:key="pref_xR"
+			 android:title="Точка разворота для мотора (ось X)"
+			 android:summary="Точка разворота для мотора по оси X, выше которой один мотор начинает вращаться в другую сторону"
+			 android:defaultValue="@+string/default_xR" />
+		
+		<EditTextPreference
+			 android:key="pref_yMax"
+			 android:title="Предел по оси Y"
+			 android:summary="Предел наклона (чувствительность) по оси Y"
+			 android:defaultValue="@+string/default_yMax" />
+		
+		<EditTextPreference
+			 android:key="pref_yThreshold"
+			 android:title="Минимальное значение ШИМ"
+			 android:summary="Минимальное значение ШИМ (порог ниже которого не вращается двигатель)"
+			 android:defaultValue="@+string/default_yThreshold" />	
+			 
+		<EditTextPreference
+			 android:key="pref_pwmMax"
+			 android:title="Максимальное значение ШИМ"
+			 android:summary="Максимальное значение ШИМ (для Arduino 255)"
+			 android:defaultValue="@+string/default_pwmMax" />	
+		 
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+ 		android:key="pref_Buttons"
+ 		android:title="Параметры при управлении от экранных кнопок"
+ 		android:summary="Параметры при управлении от экранных кнопок">
+		 
+		<EditTextPreference
+			 android:key="pref_pwmBtnMotorLeft"
+			 android:title="Значение ШИМ при кнопочном управлении (левый)"
+			 android:summary="Постоянное значение ШИМ при кнопочном управлении для левого двигателя"
+			 android:defaultValue="@+string/default_pwmBtnMotorLeft" />
+		
+		<EditTextPreference
+			 android:key="pref_pwmBtnMotorRight"
+			 android:title="Значение ШИМ при кнопочном управлении (правый)"
+			 android:summary="Постоянное значение ШИМ при кнопочном управлении для правого двигателя"
+			 android:defaultValue="@+string/default_pwmBtnMotorRight" />
+		
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+ 		android:key="pref_Touch"
+ 		android:title="Параметры при управлении от тача"
+ 		android:summary="Параметры при управлении от тача">
+		 
+		<EditTextPreference
+			 android:key="pref_xRperc"
+			 android:title="Точка разворота для мотора по оси X (в процентах)"
+			 android:summary="Точка разворота для мотора по оси X, выше которой один мотор начинает вращаться в другую сторону"
+			 android:defaultValue="@+string/default_xRperc" />
+				
+	</PreferenceCategory>
+	
+</PreferenceScreen>

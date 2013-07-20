@@ -1,0 +1,56 @@
+<resources>
+
+    <string name="app_name">Cxem CAR</string>
+    <string name="app_name_version">Cxem CAR 1.3</string>
+    <string name="menu_settings">Settings</string>
+    
+    <string name="title_activity_main">Cxem CAR</string>
+    <string name="title_activity_accelerometer">Cxem CAR - Accelerometer control</string>
+    <string name="title_activity_wheel">Cxem CAR - Virtual Wheel</string>    
+    <string name="title_activity_buttons">Cxem CAR - Button control</string>
+    <string name="title_activity_touch">Cxem CAR - Touch control</string>   
+    <string name="title_activity_mcu">Cxem CAR - MCU settings</string>
+    <string name="title_activity_about">Cxem CAR - About</string>        
+    
+    <string name="info_text">Tilt your Android device</string>
+    <string name="info_text_wheel">Pinch speed\'s slider and tilt device left&#47;right for turning</string>    
+    
+    <string name="btn_accel">Accelerometer control</string>
+    <string name="btn_wheel">Wheel control</string>    
+    <string name="btn_button">Button control</string>
+    <string name="btn_touch">Touch control</string>
+    <string name="btn_mcu">MCU settings</string>
+    <string name="btn_about">About</string>
+    
+    <string name="forward">forward</string>
+    <string name="backward">backward</string>
+    <string name="left">left</string>
+    <string name="right">right</string>
+    	
+	<string name="text_about">The latest versions of the software and source code you can download from the <![CDATA[<a href="http://english.cxem.net/mcu/mcu2.php">official project page</a>]]></string>
+	<string name="mcu_textInfo1">Settings for the MCU. The parameters are transferred and stored in the MCU EEPROM memory</string>
+	<string name="mcu_textStop">Stop when the connection is lost:</string>
+	<string name="mcu_cBox_AutoOFF">On</string>
+	<string name="mcu_after_sec">After (second):</string>
+	<string name="mcu_flash_Read">Read data</string>
+	<string name="mcu_flash_Write">Write data</string>
+	
+	<string name="mcu_error_range">Enter the correct value (0.01 &#8211; 99.9)</string>
+	<string name="err_data_entry">Data entry error</string>
+	<string name="flash_success">Data successfully written in Flash</string>
+	<string name="error_get_data">Data receive error</string>
+	
+	<string name="default_MAC">00:15:FF:F2:19:5F</string>
+    <string name="default_xR">5</string>
+    <string name="default_xMax">7</string>
+    <string name="default_yMax">5</string>  
+    <string name="default_yThreshold">50</string> 
+    <string name="default_pwmMax">255</string>
+    <string name="default_commandLeft">L</string>
+    <string name="default_commandRight">R</string>
+    <string name="default_commandHorn">H</string>
+    <string name="default_pwmBtnMotorLeft">255</string>
+    <string name="default_pwmBtnMotorRight">255</string>
+    <string name="default_xRperc">60</string>
+	
+</resources>

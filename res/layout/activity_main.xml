@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:keepScreenOn="true" >
+
+    <ImageView
+        android:id="@+id/cxem_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:alpha="0.35"
+        android:contentDescription="@+id/app_name"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:src="@drawable/cxemnet_logo" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="15sp"
+        android:text="@string/app_name_version"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/photo4wd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:alpha="0.35"
+        android:contentDescription="@+id/app_name"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:src="@drawable/photo4wd" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/button_accel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_accel" />
+        
+        <Button
+            android:id="@+id/button_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+         	android:layout_below="@+id/button_accel"           
+            android:text="@string/btn_button" />        
+
+        <Button
+            android:id="@+id/button_wheel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+         	android:layout_below="@+id/button_buttons"            
+            android:text="@string/btn_wheel" />
+     
+        <Button
+            android:id="@+id/button_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        	android:layout_toRightOf="@+id/button_accel"
+            android:text="@string/btn_about" />
+        
+        <Button
+            android:id="@+id/button_touch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/button_buttons"
+         	android:layout_below="@+id/button_about"              
+            android:text="@string/btn_touch" />
+        
+        <Button
+            android:id="@+id/button_mcu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          	android:layout_below="@+id/button_touch"     
+          	android:layout_toRightOf="@+id/button_wheel"        
+            android:text="@string/btn_mcu" />
+        
+        
+        
+    </RelativeLayout>
+
+</RelativeLayout>
