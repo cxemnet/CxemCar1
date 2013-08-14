@@ -1,7 +1,7 @@
 /**
  *  Class for Bluetooth
- *  @version 1.2
- *  15.02.2013
+ *  @version 1.2.1
+ *  14.08.2013
  *  Koltykov A.V. http://cxem.net, http://english.cxem.net
  *  
  */
@@ -21,7 +21,6 @@ import android.content.Context;
 import android.os.Build;
 import android.os.Handler;
 import android.util.Log;
-
 
 public class cBluetooth{
 	
@@ -97,7 +96,9 @@ public class cBluetooth{
 	    		return false;
 			}
 	        
-	        btAdapter.cancelDiscovery();
+    		if (btAdapter.isDiscovering()) {
+    			btAdapter.cancelDiscovery();
+    		}
 	        
 	        Log.d(TAG, "...Connecting...");
 	        try {

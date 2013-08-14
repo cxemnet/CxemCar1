@@ -144,6 +144,8 @@ public class ActivityMCU  extends Activity{
 	            	int FWOKLineIndex = sb.indexOf("FWOK");						// string with the message of the successful record in Flash (строка с сообщением об успешной записи в Flash)
 	            	int endOfLineIndex = sb.indexOf("\r\n");
 	
+	            	Log.d(cBluetooth.TAG, "Recieve Flash Op:" + sb.toString());
+	            	
 	            	if (FDataLineIndex >= 0 && endOfLineIndex > 0 && endOfLineIndex > FDataLineIndex) {
 	            		String sbprint = sb.substring("FData:".length(), endOfLineIndex);
 	            		//sbprint = sbprint.replace("\r","").replace("\n","");
